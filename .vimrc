@@ -62,7 +62,7 @@ set cursorline
 
 " Prevent Vim from clobbering the scrollback buffer.
 " See: http://www.shallowsky.com/linux/noaltscreen.html
-set t_ti= t_te=
+" set t_ti= t_te=
 
 " Highlight the 80th column
 "if exists("+colorcolumn")
@@ -88,7 +88,7 @@ if has('gui_running')
   "set guifont=Espresso\ Mono:h16
   "set guifont=Inconsolata:h18
   "set guifont=Liberation\ Mono:h14 linespace=4
-  set guifont=Liberation\ Mono\ for\ Powerline:h14 linespace=1
+  "set guifont=Liberation\ Mono\ for\ Powerline:h14 linespace=1
   "set guifont=Menlo:h16
   "set guifont=Menlo\ for\ Powerline:h14
   "set guifont=Monaco:h16
@@ -115,6 +115,12 @@ inoremap <m-v> :r!pbpaste<cr>
 " ctrl+k to ctrl+u (page up)
 nnoremap <c-j> <c-d>
 nnoremap <c-k> <c-u>
+
+" 10j and k to J and K
+nnoremap J 10j
+nnoremap K 10k
+nnoremap H 30h
+nnoremap L 30l
 
 nnoremap <leader>c :TagbarToggle<cr>
 
@@ -147,7 +153,7 @@ let g:netrw_liststyle = 3
 let g:netrw_sort_sequence = '[\/]$,*,\.bak$,\.o$,\.h$,\.info$,\.swp$,\.obj$'
 
 " Use them fancy powerline symbols.
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 " Use Clojure syntax highlighting for ClojureScript files.
 au BufNewFile,BufRead *.cljs set filetype=clojure
