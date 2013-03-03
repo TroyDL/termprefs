@@ -21,5 +21,6 @@ _git_branch_color() {
   fi
 }
 
-export PS1="$LAMBDA [\[$hostname\]:\h\[$reset\]] \w\[\$(_git_branch_color)\]\$(_parse_git_branch)\[$reset\]: "
+# export PS1="$LAMBDA [\[$hostname\]:\h\[$reset\]] \w\[\$(_git_branch_color)\]\$(_parse_git_branch)\[$reset\]: "
+export PS1="[\[$hostname\]:\[$LAMBDA\]\[$reset\]] \w\[\$(_git_branch_color)\]\$(_parse_git_branch)\[$reset\]: "
 export PS2=";; "
