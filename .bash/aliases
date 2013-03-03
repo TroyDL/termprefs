@@ -12,6 +12,8 @@ alias l="ls -l"
 alias ll="ls -l"
 alias la="l -a"
 alias lA="l -A"
+alias lm="ls -al --color | more"
+alias quit="echo Use ~. or exit to end SSH session."
 
 # cd
 alias back="cd -"
