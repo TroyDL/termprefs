@@ -51,12 +51,8 @@ alias grep="grep --color"
 alias be="bundle exec"
 
 # Cat with syntax highlighting.
-[ `which pygmentize` ] \
-  && alias ccat="pygmentize -O style=rrt -f console256 -g"
-
-# Alias vim to terminal MacVim if possible.
-[ `which mvim` ] \
-  && alias vim="mvim -v"
+#[ `which pygmentize` ] \
+  #&& alias ccat="pygmentize -O style=rrt -f console256 -g"
 
 # Umbrella help function. Attempts to try `help` with the given command. If
 # that fails, `man` is attempted, followed by `<command> --help`.

@@ -23,16 +23,16 @@ export EDITOR=vim
 export FCEDIT=vim
 
 # Node
-[ `which npm` ] \
-  && export NODE_PATH=`npm -g root`
+#[ `which npm` ] \
+#  && export NODE_PATH=`npm -g root`
 
 # Personal binaries
 [ -d "$HOME/bin" ] \
   && PERSONAL="$HOME/bin"
 
 # Homebrew
-[ `which brew` ] \
-  && HOMEBREW="/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin"
+#[ `which brew` ] \
+#  && HOMEBREW="/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin"
 
 # Ruby
 [ -d "$HOME/.rbenv" ] \
