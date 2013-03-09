@@ -1,7 +1,7 @@
 # vim:filetype=sh
 
 LAMBDA=`echo -ne "\x00\xce\xbb"`
-hostname=$(tput setaf 213) # Fuscia
+hostname=$(tput setaf 5) # Fuscia
 reset=$(tput sgr0)
 
 _parse_git_branch() {
@@ -15,9 +15,9 @@ _dirty_git_branch() {
 
 _git_branch_color() {
   if _dirty_git_branch; then
-    tput setaf 210 # Red
+    tput setaf 1 # Red
   else
-    tput setaf 120 # Green
+    tput setaf 2 # Green
   fi
 }
 
