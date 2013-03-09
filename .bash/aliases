@@ -13,6 +13,7 @@ alias ll="ls -l"
 alias la="l -a"
 alias lA="l -A"
 alias lm="ls -al --color | more"
+alias ln="ls -a --color | more"
 
 # cd
 alias back="cd -"
@@ -50,6 +51,10 @@ alias pbp="pbpaste"
 alias timestamp="date +%s"
 alias grep="grep --color"
 alias be="bundle exec"
+
+# SSH
+alias ssh115="ssh cs115s23@mulan.csufresno.edu"
+alias ssh130="ssh cs130s24@mulan.csufresno.edu"
 
 # Cat with syntax highlighting.
 #[ `which pygmentize` ] \
