@@ -12,6 +12,7 @@ alias l="ls -l"
 alias ll="ls -l"
 alias la="l -a"
 alias lA="l -A"
+alias lm="ls -al --color | more"
 
 # cd
 alias back="cd -"
