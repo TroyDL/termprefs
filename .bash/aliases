@@ -12,6 +12,7 @@ alias l="ls -l"
 alias ll="ls -l"
 alias la="l -a"
 alias lA="l -A"
+alias lm="ls -al --color | more --RAW-CONTROL-CHARS"
 
 # cd
 alias back="cd -"
@@ -85,3 +86,11 @@ function ..() {
    pwd
 }
 
+#added 3-3-13
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias la='ls -a'
+alias ssh115='ssh -l cs115s23 mulan.csufresno.edu'
+alias ssh130='ssh -l cs130s24 mulan.csufresno.edu'
+alias ubuntu='tdl@192.168.56.101'
+alias ubuntuip='192.168.56.101'
