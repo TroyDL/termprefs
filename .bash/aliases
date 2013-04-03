@@ -1,5 +1,8 @@
 # vim:filetype=sh
 
+alias dropbox="cd /media/tdl/ExpressCache/Dropbox"
+alias home="cd ~"
+
 # ls
 if [[ `ls --color 2>/dev/null` ]]; then
   alias ls="ls --color -F"
@@ -12,7 +15,8 @@ alias l="ls -l"
 alias ll="ls -l"
 alias la="l -a"
 alias lA="l -A"
-alias lm="ls -al --color | more --RAW-CONTROL-CHARS"
+#not needed in ubuntu12.10  alias lm="ls -al --color | more --RAW-CONTROL-CHARS"
+alias lm="ls -al | more"
 
 # cd
 alias back="cd -"
