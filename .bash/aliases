@@ -2,6 +2,11 @@
 
 alias dropbox="cd /media/tdl/ExpressCache/Dropbox"
 alias home="cd ~"
+alias 115="cd /media/tdl/ExpressCache/Dropbox/CSUF_Spring_2013/CSCI115"
+alias 112="cd /media/tdl/ExpressCache/Dropbox/CSUF_Spring_2013/CSCI112"
+alias 130="cd /media/tdl/ExpressCache/Dropbox/CSUF_Spring_2013/CSCI130"
+alias 126="cd /media/tdl/ExpressCache/Dropbox/CSUF_Spring_2013/CSCI126"
+alias 152="cd /media/tdl/ExpressCache/Dropbox/CSUF_Spring_2013/CSCI152"
 
 # ls
 if [[ `ls --color 2>/dev/null` ]]; then
