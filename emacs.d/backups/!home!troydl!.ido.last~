@@ -1,0 +1,69 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/" . "troydl/")
+ ("/" . "home/")
+ ("/home/troydl/code/clj/test-project1/src/" . "test_project1/")
+ ("/home/troydl/code/clj/test-project1/" . "src/")
+ ("/home/troydl/code/clj/" . "test-project1/")
+ ("/home/troydl/code/" . "clj/")
+ ("/home/troydl/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/troydl/git/matilde/emacs.d/"
+ "/home/troydl/.emacs.d/"
+ "/home/troydl/code/clj/test-project1/src/"
+ "/home/troydl/code/clj/test-project1/"
+ "/home/troydl/code/clj/ritz-nrepl-test-project/"
+ "/home/troydl/.lein/"
+ "/home/troydl/code/clj/test-project1/src/test_project1/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "noprompt-util.el"
+ "noprompt-package.el"
+ "init.el"
+ "user.clj"
+ "project.clj"
+ "pom.xml"
+ "profiles.clj"
+ "core.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/troydl/git/matilde/emacs.d/" (20956 36201) "places" "noprompt-package.el" "non-elpa/" "init.el" ".smex-items" "elpa/" "auto-save-list/" "ac-comphist.dat" "nrepl-history" "javert/" "backups/" "themes/" "./" "noprompt-util.el" "../")
+
+ ("/home/troydl/.emacs.d/" (20956 35755) "places" "noprompt-package.el" "non-elpa/" "init.el" ".smex-items" "elpa/" "auto-save-list/" "ac-comphist.dat" "nrepl-history" "javert/" "backups/" "themes/" "./" "noprompt-util.el" "../")
+
+ ("/home/troydl/" (20956 35755) "Desktop/" ".pki/" ".profile" ".ido.last" ".gconf/" ".dmenu_cache" ".code/" ".vboxclient-clipboard.pid" "Pictures/" ".local/" "git/" "Public/" ".vboxclient-seamless.pid" ".mysql/" "Templates/" ".config/" ".vimrc" ".purple/" "..emacs.d/" ".bash_history" ".vim/" ".kde/" ".xmobarrc" ".lein/" ".dbus/" ".dmrc" "expressCache/" ".mysql_history" ".xscreensaver" ".bashrc" ".emacs.d/" "Music/" ".xsession-errors" ".xmonad/" "Videos/" ".bash_logout" ".Xauthority" ".viminfo" ".shell_history" "64GBSD/" ".m2/" ".matilde/" "Documents/" "bin/" ".xsession-errors.old" "Downloads/" ".gstreamer-0.10/" ".gitconfig" "code/" ".recentf" ".vboxclient-draganddrop.pid" ".hardinfo/" ".bash_profile" "./" ".vboxclient-display.pid" "../" ".thumbnails/" ".cache/")
+
+ ("/home/troydl/code/clj/test-project1/src/" (20956 30697) "user.clj" "test_project1/" "../" "./")
+
+ ("/home/troydl/git/" (20955 15963) "slime/" "ubuntusettings/" "matilde/" "termprefs/" "inspection-reports/" "./" "../")
+
+ ("/home/troydl/git/matilde/" (20938 26917) ".bash/" "lein/" ".gitmodules" ".vimrc" ".vim/" ".gitignore" ".bashrc" "README.md" "emacs.d/" "bin/" "lib/" ".git/" ".bash_profile" "./" "../")
+
+ ("/home/" (20935 47266) "troydl/" "./" "../")
+
+ ("/home/troydl/.emacs.d/javert/" (20938 26663) "src/" ".gitignore" "README.md" "nrepl-inspect.el" "project.clj" "./" "../")
+
+ ("/home/troydl/code/clj/ritz-nrepl-test-project/" (20956 33420) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "doc/" ".gitignore" "../" "./")
+
+ ("/home/troydl/code/clj/" (20956 33405) "test-project1/" "ritz-nrepl-test-project/" "blitz/" "../" "./")
+
+ ("/home/troydl/.lein/" (20955 17998) "profiles.clj" "self-installs/" "./" "../")
+
+ ("/home/troydl/code/clj/test-project1/" (20955 18026) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "doc/" ".shell_history" ".lein-repl-history" ".gitignore" ".git/" "../" "./")
+
+ ("/home/troydl/code/" (20939 19568) "mysql/" "clj/" "../" "./")
+
+ ("/home/troydl/code/clj/test-project1/src/test_project1/" (20939 9560) "core.clj" "./" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ exit-minibuffer
+ quit-window
+ load-file
+ cd
+ 5x5
+ arp
+ dbx
+)
+
+;; ----- smex-data -----
+(
+ (ac-complete-slime . 1)
+ (slime . 1)
+ (nrepl-ritz-jack-in . 2)
+ (nrepl-ritz-break-breakpoint-list . 2)
+ (nrepl-ritz-break-on-exception . 2)
+ (load-file . 2)
+ (quit-window . 1)
+ (exit-minibuffer . 1)
+)

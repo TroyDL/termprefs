@@ -1,0 +1,53 @@
+(ns user
+  (:require [clojure.pprint :refer (pprint pp)]
+            [clojurewerkz.neocons.rest :as nr]
+            [clojurewerkz.neocons.rest.nodes :as nn]
+            [clojurewerkz.neocons.rest.relationships :as nrl]
+            [clojurewerkz.neocons.rest.cypher :as cy]
+            [clojure.string :as str]
+            [clojure.set :as set]
+            [korma.db :as kdb]
+            [korma.core :as kc]))
+
+
+(kdb/defdb mydb
+  (kdb/mysql {:db "blitz"
+              :user "root"
+              :password "root"}))
+
+;; create sql entity
+;; create neo4j index
+;; make fn for creating node on index
+;; migrate sql entities to neo4j nodes
+
+(declare
+ sql-season
+ sql-sport
+ sql-player)
+
+(kc/defentity sql-season
+  (kc/table "season"))
+
+(kc/defentity player
+  (kc/table :player)
+  (kc/database mydb)
+  (kc/entity-fields :slug))
+
+#_(kc/select sql-player)
+
+#_(nr/connect! "http://localhost:7474/db/data/")
+
+#_(defn upsert [index data & {:keys [index-key unique?]}]
+  (let [lookup ((keyword index-key) data)
+        node (or (nn/find-one (:name index) index-key lookup)
+                 (nn/create data))]
+    (nn/add-to-index (:id node) (:name index) index-key lookup
+                     (boolean unique?))))
+
+#_(defn create-season
+  [{:keys [name weaks start_date]}]
+  (upsert season-idx {:name name
+                      :weeks weeks
+                      :start_date start_date}
+          :index-key "name"))
+

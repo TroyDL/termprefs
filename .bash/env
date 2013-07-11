@@ -31,8 +31,8 @@ export FCEDIT=vim
   && PERSONAL="$HOME/bin"
 
 # Homebrew
-[ `which brew` ] \
-  && HOMEBREW="/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin"
+#[ `which brew` ] \
+#  && HOMEBREW="/usr/local/bin:$(brew --prefix coreutils)/libexec/gnubin"
 
 # Ruby
 [ -d "$HOME/.rbenv" ] \
@@ -48,4 +48,4 @@ if [ -d "$HOME/lib/VimClojure" ]; then
   export VIMCLOJURE_SERVER_JAR="$(find "$HOME/lib/VimClojure" -name '*.jar' | tail -1)"
 fi
 
-export PATH="$PERSONAL:$HOMEBREW:$RBENV:$CABAL:$PATH"
+export PATH="$PERSONAL:$RBENV:$CABAL:$PATH"

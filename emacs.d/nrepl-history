@@ -1,0 +1,438 @@
+;; -*- coding: utf-8-unix -*-
+;; Automatically written history of nREPL session
+;; Edit at your own risk
+
+("(+ 4 j)" "(def j 4)" "(- 4 0)" "(list *1)" "(set *1)" "(flatten *1)" "(conj kys kys)" "(flatten *1)" "(conj (set kys) kys)" "(set kys)" "(def kys *1)" "*2" "(conj (set *1) *1)" "*3" "(conj *1 *1)" "(set *1)" "(keys *1)" "(:data *1)" "(first (first *1))" "(:data *1)" "(cy/query \"start n=node(*)
+return n limit 1\")" "(keys (:data (first (first (cy/query \"start n=node(*)
+return n limit 1\")))))" "(keys (:data (first (first (first (cy/query \"start n=node(*)
+return n limit 20\"))))))" "(keys (:data (first (first (cy/query \"start n=node(*)
+return n limit 20\")))))" "(find-all-properties 0)" "(keys (first (find-all-properties 0)))" "(keys (find-all-properties 0))" "(pp)" "(find-all-properties 0)" "(find-all-properties)" "(conj #{} (seq (find-all-properties 0)))" "(conj #{} (find-all-properties 0))" "(print *2)" "(pp)" "(conj #{} *1)" "(seq *1)" "(find-all-properties 0)" "(pp)" "(find-all-properties-v2)" "(pp)" "(find-all-properties 0)" "(pp)" "(find-all-properties-v2)" "(first *1)" "(first *2)" "(Integer. *1)" "(:data *1)" "(cy/query \"start n=node(*) return count(n)\")" "(pp)" "(find-all-properties 0)" "(pp)" "(find-all-properties 0)" "(find-all-properties)" "(pp)" "(cy/query (format \"start n=node(*) where %s) return n limit 1\"
+                        (str ids \"and not(has(n.game_id))\")))" "(pp)" "(cy/query (format \"start n=node(*) where %s) return n limit 1\" ids))" "(doc format)" "(cy/query (format \"start n=node(*) where %s) return n limit 1\") ids)" "(cy/query (format \"start n=node(*) where %) return n limit 1\") ids)" "(def ids \"(not(has(n.sport_id)) and not(has(n.name))\")" "(cy/query \"start n=node(*) where
+         (not(has(n.sport_id)) and not(has(n.name))) return n limit 1\")" "(pp)" "(cy/query \"start n=node(*) where
+         (not(has(n.sport_id)) and not(has(n.name))) return n limit 1\")" "(cy/query \"start n=node(*) where
+         (not(has(n.sport_id)) and not(has(n.name))) return n\")" "(cy/query \"start n=node(*) where
+         not(has(n.sport_id,n.name)) return n\")" "(cy/query \"start n=node(*) where
+         (not(has(n.sport_id,n.name))) return n\")" "(cy/query (str \"start n=node(*) where (not(has(n.\" ids \"))  return n limit 1\"))" "ids" "#_(cy/query (str \"start n=node(*) where not(has(n.\" ids \")) return n limit 1\"))" "(pp)" "(cy/query (str \"start n=node(*) where not(has(n.\" ids \")) return n limit 1\"))" "(cy/query \"start n=node(*) where not(has(n.\" ids \")) return n limit 1\")" "(def ids \"sport_id\")" "#_(cy/query \"start n=node(*) where not(has(n.sport_id)) return n limit 1\")" "(pp)" "(cy/query \"start n=node(*) where not(has(n.sport_id)) return n limit 1\")" "(find-all-properties-v2)" "(find-all-properties)" "(cy/query \"start r=rel(*) where :type='test_rl' return r limit 5;\")" "(cy/query \"start r=rel(*) where :type='test_rl' return r limit 5\")" "(cy/query \"start n=node(*) match n-[:test_rl]-() return n limit 1;\")" "(cy/query \"start r=rel(*) where HAS(r.test_rl) return r limit 1;\")" "(pp)" "(nrl/all-types)" "(nrl/outgoing-for 6440 :types [:played_in_season])" "(nrl/outgoing-for 6440)" "(nn/outgoing-for 6440)" "(nn/delete 3275)" "(:id *1)" "(nn/get (:id *1))" "(nn/create {:blah \"bleh\"})" "(nn/get (:id *2))" "(pp)" "(cy/query \"start r=rel(*) where HAS(r.position_id) return r limit 1;\")" "(cy/query \"start r=rel(*) where HAS(\"position_id\") return r limit 1;\")" "(cy/query \"start n=node(*), m=node(*) match (n)-[:plays_for_team]->(m)
+                 return n,m limit 1;\")" "(pp)" ";\")" "(cy/query \"start n=node(*), m=node(*) match (n)-[:plays_for_team]->(m)
+                 return n,m limit 1\")" "(cy/query \"start n=node(*), m=node(*) match (n)-[:plays_for_team]->(m)
+                 return n,m;\")" "(float *1)" "(/ 1546 60)" "(time (import-player-team-and-positions))" "(filter :data *1)" "(nrl/outgoing-for 99100 :keys :type)" "(nrl/outgoing-for 99100 {:keys [type]})" "(nrl/outgoing-for 99100 :blah \"mopping\")" "(pp)" "(nrl/outgoing-for 99100 :type \"mopping\")" "(pp)" "(nrl/outgoing-for 99100 :type \"test_rel1\")" "(nrl/outgoing-for 99100 \"test_rel1\")" "(nrl/outgoing-for 99100 {:type \"test-rel1\"})" "(pp)" "(nrl/outgoing-for 99100)" "(nrl/incoming-for 99100)" "(nrl/create 99100 99101 :test-rel1 {:testrelkey1 \"testrelval1\"})" "(nn/create {:testkey2 \"testval2\"})" "(nn/create {:testkey1 \"testval1\"})" "(nn/delete 99098)" "(nn/delete 99099)" "(nrl/delete 305244)" "(nrl/destroy 305244)" "(nrl/get 305244)" "(nrl/update 305244 {:position_id 7})" "(nrl/get 305244)" "(nrl/update 305244 {:position_id 5})" "(nrl/get (:id (nrl/fetch-from (:self (first (first (:data q1)))))))" "(:id (nrl/fetch-from (:self (first (first (:data q1))))))" "(pp)" "(nrl/fetch-from (:self (first (first (:data q1)))))" "(nrl/fetch-from (:properties (first (first (:data q1)))))" "(nrl/fetch-from (:property (first (first (:data q1)))))" "(first (first (:data q1)))" "(pp)" "(nrl/fetch-from (:start (first (first (:data q1)))))" "(first (first (:data q1)))" "(nrl/get (first (first (:data q1))))" "(nrl/get (first (:data q1)))" "(nrl/get (:data q1))" "(nrl/get q1)" "q1" "(if (empty? (:data q1)) \"yes\" \"no\")" "(if (empty? (:data q2)) \"yes\" \"no\")" "(if (empty? (:data q2) \"yes\" \"no\"))" "(def q2 *1)" "(cy/query \"start n=node(99098), n2=node(99097) match (n)-[r]->(n2)
+      return r;\")" "(if (empty? *1) \"yes\" \"no\")" "(cy/query \"start n=node(99098), n2=node(99097) match (n)-[r]->(n2)
+      return r;\")" "(if (= \"has_position\" (:type (first (first (:data q1))))) \"yes\" \"no\")" "(if (= \"has_positions\" (:type (first (first (:data q1))))) \"yes\" \"no\")" "(if (= \"has_position\" (:type (first (first (:data q1))))) \"yes\" \"no\")" "(:type (first (first (:data q1))))" "(def q1 *1)" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return r;\")" "(first (first (:data *1)))" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return r;\")" "(pp)" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return r;\")" "(get-in [:data :type] *1)" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return r;\")" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[:has_position]->(n2)
+      return r;\")" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return r;\")" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return true;\")" "(pp)" "(cy/query \"start n=node(99098), n2=node(99099) match (n)-[r]->(n2)
+      return r;\")" "(cy/query \"start n=node(99098), n2=node(99099) return n, n2\")" "(cy/query \"start n=node(99098), n2=node(99099) return n2\")" "(cy/query \"start n=node(99098) return n\")" "(nrl/query \"has_position\")" "(nrl/maybe-create 99098 99099 \"has_position\")" "(nrl/create 99098 99099 \"has_position\")" "(nn/create {:testkey2 \"testval2\"})" "(nn/create {:testkey \"testval\"})" "(nrl/maybe-create)" "(nrl/incoming-for 70267)" "(pp)" "(nn/get 70267)" "(pp)" "(nrl/incoming-for 70267)" "(nrl/incoming-for 149295)" "(empty? *1)" "(nrl/incoming-for 6449)" "(pp)" "(nrl/all-for 6449 {:type \"\"} \"has_statdfdf\")" "(pp)" "(nrl/all-for 6449 {:type \"\"} \"has_stat\")" "(nrl/all-for 6449 {:type '[\"has_stat\"]})" "(nrl/all-for 6449 {:type '[has_stat]})" "(nrl/all-for 6449 {:type} {\"has_stat\"})" "(nrl/all-for 6449 {:type \"has_stat\"})" "(pp)" "(first (nrl/all-for 6449))" "(:type (first (nrl/all-for 6449)))" "(nrl/all-for 6449)" "(nrl/all-for 6449 :type '[blah])" "(nrl/all-for 6449 :type [blah])" "(nrl/all-for 6449 :type \"blah\")" "(nrl/all-for 6449 :type)" "(nrl/all-for 6449 :keys)" "(nrl/all-for 6449 :keys \"\")" "(nrl/all-for 6449 :keys \"has_team\")" "(pp)" "(nrl/all-for 6449 :type \"has_team\")" "(pp)" "(nrl/all-for 6449 :type \"completed_action\")" "(nrl/all-for 6449 {:type \"completed_action\"})" "(nrl/first-outgoing-between 6449 73303 true?)" "(nrl/first-outgoing-between 6449 73303 {:type \"*\"})" "(nrl/first-outgoing-between 6449 73303 {:type \"completed_action\"})" "(pp)" "(nrl/all-for 70267)" "(nrl/all-for 6449)" "(pp)" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n, p limit 1;\")
+" "(doc nrl/first-outgoing-between)" "(nrl/first-outgoing-between 6449 73303 *)" "(nrl/first-outgoing-between 6449 73303 [:completed_action])" "(nrl/first-outgoing-between 6449 73303 :completed_action)" "(nrl/first-outgoing-between 6449 73303 :type)" "(nrl/first-outgoing-between 6449 73303 types)" "(nrl/first-outgoing-between 6449 73303 \"completed_action\")" "(nrl/first-outgoing-between 6449 73303)" "(pp)" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n, p limit 1;\")
+" "(nrl/first-outgoing-between 6449)" "(pp)" "rquery" "(:data (first (first (:data rquery))))" "(first (first (:data rquery)))" "(first (:data rquery))" "(:data (:data rquery))" "(:data rquery)" "(first *1)" "(first rquery)" "(def rquery *1)" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 1;\")
+" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 2;\")
+
+
+
+
+
+
+
+
+
+
+" "(cy/query \"start n=node(*) match (n)-[:blah]->(p) return n limit 2;\")" "(if (cy/query \"start n=node(*) match (n)-[:completed_bah]->(p) return n limit 2;\") \"yes\" \"no\")" "(if (cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 2;\") \"blah\")" "(false? (cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 2;\"))" "(true? (cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 2;\"))" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 2;\")" "(pp)" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n limit 2;\")" "(cy/query \"start n=node(*) match (n)-[:completed_action]->(p) return n;\")" "(cy/query \"star n=node(*) match (n)-[:completed_action]->(p) return n;\")" "(cy/query \"star n=node(*) where (n)-[r]->(p) return n;\")" "(nrl/relationships-for 6449 :all '[type])" "(nrl/relationships-for 6449 :all types)" "(nrl/relationships-for 6449)" "(source nrl/all-for)" "(nrl/all-for 6449 {:type \"completed_action\"})" "(pp)" "(nrl/all-for 6449 \"type\" \"completed_run\")" "(pp)" "(nrl/all-for 6449 \"type\" \"completed_actio\")" "(pp)" "(nrl/all-for 6449 \"type\" \"completed_action\")" "(pp)" "(nrl/all-for 6449)" "(nrl/all-for 6449 {:keys [\"completed_action\"]})" "(nrl/all-for 6449 {:keys [completed_action]})" "(nrl/all-for 6449 {:keys [completed_action]}))" "(nrl/all-for 6449 {:keys \"completed_action\"})" "(nrl/all-for 6449 {:type \"completed_action\"})" "(pp)" "(nrl/all-for 6449)" "(pp)" "(nn/find-one \"players_idx\" \"player_id\" 10)" "(pp)" "(query \"player_id\" {:index \"players_idx\"})" "(nn/find-one \"players_idx\" \"player_id\")" "(pp)" "(query \"position_name\" {:limit 50})" "(pp)" "(query \"sport_id\" {:index \"sports_idx\"})" "(import-positions)" "(destroy-nodes (query \"position_name\" {:index \"positions_idx\" :limit 50 :return \"node_id\"}))
+
+
+
+
+
+
+
+
+
+" "(destroy-nodes (query \"position_name\" {:index \"positions_idx\"}))" "(query \"position_name\")" "(cy/query \"start n=node:sports_idx('sport_id:*') return n\")" "(pp)" "(cy/query \"start n=node:sports_idx('sport_id:*') return n\")" "(query \"sport_id\" {:index \"sports_idx\"})" "(import-sports)" "(nn/destroy-many '[99053 99054 99055 99056 99057])" "(nn/find \"sports_idx\" \"sport_id\" 10)" "(nn/find \"sports_idx\" \"sport_id\" 5)" "(nn/find \"sports_idx\" \"sport_id\" 9)" "(nn/find \"sports_idx\" \"sport_id\" 8)" "(nn/find \"sports_idx\" \"sport_id\" 7)" "(nn/find \"sports_idx\" \"sport_id\" 6)" "(nn/find \"sports_idx\" \"sport_id\" *)" "(nn/find \"sports_idx\" \"sport_id\" \"*\")" "(query \"name\" {:val \"Football\"})" "(pp)" "(nn/find-one \"sports_idx\" \"sport_id\" 6)" "(query \"sport_id\" {:index \"sports_idx\"})" "(pp)" "(query \"sport_id\")" "(query \"sport_id\" {:index \"sports_idx\"})" "(import-positions)" "(import-sports)" "(query \"sport_id\" {:index \"sports_idx\"})" "(destroy-nodes (query \"sport_id\" {:index \"sports_idx\" :return \"node_id\"}))" "(destroy-nodes (query \"sport_id\" {:index \"sports_idx\"}))" "(pp)" "(query \"sport_id\" {:index \"sports_idx\"})" "(nn/find-one \"sports_idx\" \"sport_id\" 6)" "(import-positions)" "(query \"position_name\")" "(destroy-nodes (query \"position_name\" {:limit 20 :return \"node_id\"}))" "(query \"position_name\")" "(import-positions)" "(query \"positions_idx\")" "(destroy-nodes (query \"positions_idx\" {:limit 50 :return \"node_id\"}))" "(nn/add-to-index 3284 \"positions_idx\" \"position_id\" 6)" "(nn/add-to-index 3284 \"positions_idx\" \"position_id\" 5)" "(nn/add-to-index 3282 \"positions_idx\" \"position_id\" 4)" "(pp)" "(query \"position_name\" {:limit 50})" "(def pos *1)" "(query \"position_name\" {:limit 50 :return \"node_id\"})" "(nn/find-one \"positions_idx\" \"position_id\" 3)" "(pp)" "(nn/add-to-index 3275 \"positions_idx\" \"position_id\" 3)" "(pp)" "(query \"position_name\" {:limit 50})" "(query \"position_name\")" "(nn/find-one \"positions_idx\" \"position_id\" 3)" "(pp)" "(nn/find-one \"positions_idx\" \"name\" \"Quarterback\")" "(blah)" "(kc/select sql-player-team-season-position
+          (kc/join sql-player-team-season
+                   (= :player_team_season_position.player_team_season_id
+                      :player_team_season.id))
+          (kc/limit 1))" "(kc/select sql-player-team-season-position
+          (kc/with sql-player-team-season
+                   (= :player_team_season_position.player_team_season_id
+                      :player_team_season.id))
+          (kc/limit 1))" "(kc/select sql-player-team-season-position
+          (kc/with sql-player-team-season
+                   (= player_team_season_position.player_team_season_id
+                      player_team_season.id))
+          (kc/limit 1))" "(kc/select sql-player_team_season_position
+          (kc/with sql-player_team_season
+                   (= player_team_season_position.player_team_season_id
+                      player_team_season.id))
+          (kc/limit 1))" "(kc/select player_team_season_position
+          (kc/with player_team_season
+                   (= player_team_season_position.player_team_season_id
+                      player_team_season.id))
+          (kc/limit 1))" "#_(kc/select sql-stat
+                (kc/join :left [sql-stat-type :st]
+                         (= :stat.stat_type_id :st.stat_type_id))
+                (kc/fields :stat_id :game_id :team_id :player1_id
+                           :i1 :i2 :i3 :i4 :st.stat_name :st.int1_name
+                           :st.int2_name :st.int3_name :st.int4_name)
+                (kc/limit 12000) (kc/offset 36000))" "(import-league-seasons)" "(kc/select sql-league-season (kc/limit 1))" "(kc/select sql-league-season (kc/limit 100))" "(kc/select sql-league-season (kc/limit 10))" "(pp)" "(query \"game_id\" {:index \"games_idx\"})" "(query \"game_id\" {:index \"game_id\"})" "(pp)" "(query \"game_id\")" "(import-team-seasons)" "(import-coach-seasons)" "(time (query \"action_id\" {:count true}))" "(time (query \"action_id\" {:count true :index \"actions_idx\"}))" "(time (query \"action_id\" {:count true}))" "(query \"action_id\" {:count true})" "(time (import-actions))" "(query \"action_id\" {:count true})" "(time (import-actions))" "(import-actions)" "(kc/exec-raw
+        \"select * from action left join (score_type, action_type) on (action.score_type_id = score_type.score_type_id and action.action_type_id = action_type.action_type_id) limit 1;\" :results)" "(kc/exec-raw
+        \"select * from action left join (score_type, action_type) on (action.score_type_id = score_type.score_type_id and action.action_type_id = action_type.action_type_id) limit 1;\" :res)" "(kc/exec-raw
+        \"select * FROM action LEFT JOIN (score_type, action_type) ON (action.score_type_id = score_type.score_type_id AND action.action_type_id = action_type.action_type_id) limit 1;\" :res)" "(import-actions)" "(kc/exec-raw
+        \"select id, parent AS parent_id, game_id, team_id, player1_id, player1_name,player2_id, player2_name, period, value, failed, notes, score_type_name,score_type_point_value, action_type.action_type_id, action_type.parent_id AS action_type_parent_id, single_team_action, action_name, float_name FROM action LEFT JOIN (score_type, action_type) ON (action.score_type_id = score_type.score_type_id AND action.action_type_id = action_type.action_type_id) limit 1;\" :res)" "(import-actions)" "(comment (nn/create-unique-in-index \"games_idx\"
+                                   :game_id game_id
+                                   {:game_id game_id
+                                    :season_id season_id
+                                    :sport_id sport_id
+                                    :school_id school_id
+                                    :status status
+                                    :game_date game_date
+                                    :summary summary
+                                    :editor_notes editor_notes
+                                    :team1_id team1_id
+                                    :team1_host? team1_host
+                                    :team2_id team2_id
+                                    :team2_host? team2_host
+                                    :game_type game_type_name}))" "(true? (print 8))" "(query \"player_id\" {:return \"player_id\"})" "(pp)" "(query \"player_id\")" "(query \"player_id\" {:val 0})" "(nn/find-one \"players_idx\" \"player_id\" -1)" "(nn/delete 69700)" "(query \"blah\")" "(query \"blah\\?\")" "(query \"blah\\\\?\")" "(nn/get 69700)" "(query \"blah?\")" "(nn/create {:blah? \"yup\"})" "(doc nn/delete-many)" "(query \"stat_id\" {:count true})" "(import-stats)" "(query \"stat_id\" {:count true})" "(import-stats)" "(query \"stat_id\" {:count true})" "(import-stats)" "(query \"stat_id\" {:count true})" "(import-stats)" "(query \"stat_id\" {:count true})" "(import-stats)" "(pp)" "(query \"stat_id\")" "(query \"stat_id\" {:count true})" "(import-stats)" "(blah)" "(query \"stat_id\" {:count true})" "(destroy-nodes (query \"stat_id\" {:return \"node_id\" :limit 9999}))" "(first '())" "(query \"stat_id\" {:count true})" "(destroy-nodes (query \"stat_id\" {:return \"node_id\" :limit 9999}))" "(nn/destroy (nn/get (first nodes)))" "(nn/destroy (first nodes))" "(first nodes)" "(def nodes (query \"stat_id\" {:return \"node_id\" :limit 9999}))" "(destroy-nodes (query \"stat_id\" {:return \"node_id\" :limit 9999}))" "(query \"stat_id\" {:count true})" "(query \"stat_id\")" "(destroy-nodes (query \"stat_id\" {:return \"node_id\" :limit 9999}))" "(query \"stat_id\")" "(destroy-nodes (query \"stat_id\" {:return \"node_id\" :limit 9999}))" "(query \"stat_id\")" "(query \"stat_id\" {:count true})" "(query \"stat_id\" {:count? true})" "(query \"stat_id\" {:count? false})" "(query \"stat_id\" {:count? true})" "(println *1)" "(if c2 5 6)" "(if c 5 6)" "(def c2 true)" "(def c false)" "(query \"stat_id\" {:count? true})" "(query \"stat_id\")" "(count \"................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................\")" "(import-stats)" "(and *1 (pprint 1))" "(nn/find-one \"players_idx\" \"player_id\" 2)" "(and (pprint 5) (pprint 6))" "(and (pprint 5) 5)" "(and nil 5)" "(nn/find-one \"players_idx\" \"player_id\" 0)" "(import-stats)" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/fields :stat_id :game_id :team_id :player1_id
+                            :i1 :i2 :i3 :i4 :st.stat_name :st.int1_name
+                            :st.int2_name :st.int3_name :st.int4_name)
+                 (kc/limit 1))" "(pp)" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/fields :stat_id :game_id :team_id :player1_id
+                            :i1 :i2 :i3 :i4 :st.stat_name :st.int1_name
+                            :st.int2_name :st.int3_name :st.int4_name)
+                 (kc/limit 1))" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/fields :stat.stat_id :game_id :team_id :player1_id
+                            :i1 :i2 :i3 :i4 :stat_name :int1_name
+                            :int2_name :int3_name :int4_name)
+                 (kc/limit 1))" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/limit 1))" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/fields :stat_id :game_id :team_id :player1_id
+                            :i1 :i2 :i3 :i4 :stat_name :int1_name
+                            :int2_name :int3_name :int4_name)
+                 (kc/limit 1))" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/fields :stat_id :game_id :team_id player1_id
+                            :i1 :i2 :i3 :i4 :stat_name :int1_name
+                            :int2_name :int3_name :int4_name)
+                 (kc/limit 1))" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/fields :stat_id :game_id team_id player1_id
+                            :i1 :i2 :i3 :i4 :stat_name :int1_name
+                            :int2_name :int3_name :int4_name)
+                 (kc/limit 1))" "(pp)" "(kc/select sql-stat
+                 (kc/join :left [sql-stat-type :st]
+                          (= :stat.stat_type_id :st.stat_type_id))
+                 (kc/limit 1))" "(import-scores)" "(nn/find-one \"teams_idx\" \"team_id\" 23)" "(nn/find-one \"teams_idx\" team_id 23)" "(nn/find-one \"teams_idx\" :team_id 23)" "(nn/find-one \"teams_idx\" {:team_id 23})" "(nrl/create 25676 29005 :scored_in {:score 15 :period 1})" "(nrl/delete 6132)" "(nrl/update 6132 {:type \"scored_in\"})" "(nrl/create 25676 29005 :score_during {:score 15 :period 1})" "(kc/select sql-score (kc/limit 1))" "(query \"game_id\" {:val 2})" "(query \"team_id\" {:val 23})" "(kc/select sql-score (kc/limit 1))" "(query \"game_id\" {:val 2})" "(nn/delete 32262)" "(query \"game_id\" {:val 2})" "(kc/select sql-score (kc/limit 1))" "(pp)" "(query \"team_id\" {:val 23})" "(pp)" "(query \"game_id\" {:val 2})" "(nrl/creat)" "(nn/create (first *1))" "(kc/select sql-score (kc/limit 1))" "(nn/create *1)" "(kc/select sql-score (kc/limit 1))" "(import-games)" "(kc/exec-raw \"select game_id from game natural join (select game_id, m1.team_id as team1_id, m1.host as team1host, 
+                                  m2.team_id as team2_id, m2.host as team2host
+                                  from matchup as m1 join matchup as m2 using(game_id) where m1.team_id != m2.team_id
+                                  group by game_id) as subtable1
+                   left join game_type using(game_type_id) limit 1;\" :results)" "(kc/exec-raw \"select count(*) from game natural join (select game_id, m1.team_id as team1_id, m1.host as team1host, 
+                                  m2.team_id as team2_id, m2.host as team2host
+                                  from matchup as m1 join matchup as m2 using(game_id) where m1.team_id != m2.team_id
+                                  group by game_id) as subtable1
+                   left join game_type using(game_type_id);\" :results)" "(kc/exec-raw \"select count(*) from game natural join (select game_id, m1.team_id as team1_id, m1.host as team1host, 
+                                  m2.team_id as team2_id, m2.host as team2host
+                                  from matchup as m1 join matchup as m2 using(game_id) where m1.team_id != m2.team_id
+                                  group by game_id) as subtable1
+                   left join game_type using(game_type_id);\")" "(kc/exec-raw \"select count(*) from game natural join (select game_id, m1.team_id as team1_id, m1.host as team1host, 
+                                  m2.team_id as team2_id, m2.host as team2host
+                                  from matchup as m1 join matchup as m2 using(game_id) where m1.team_id != m2.team_id
+                                  group by game_id) as subtable1
+                   left join game_type using(game_type_id)\")" "(kc/exec-raw \"select count(*) from game natural join (select game_id, m1.team_id as team1_id, m1.host as team1host, 
+                                  m2.team_id as team2_id, m2.host as team2host
+                                  from matchup as m1 join matchup as m2 using(game_id) where m1.team_id != m2.team_id
+                                  group by game_id) as subtable1
+                   left join game_type using(game_type_id);\")" "(kc/select sql-game
+     (kc/join sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     #_(kc/fields :game_id)
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     #_(kc/fields :game_id)
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(kc/select sql-game
+     (kc/join [sql-game-type :g] (= :g.game_id :game_id)
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     #_(kc/fields :game_id)
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(kc/select sql-game
+     (kc/join sql-game-type (= :game_type.game_id :game_id)
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     #_(kc/fields :game_id)
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(kc/select sql-game
+     (kc/join sql-game-type (= :game_type.game_id :game.game_id)
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     #_(kc/fields :game_id)
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     #_(kc/fields :game_id)
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                          )
+     (kc/where (> :game_date 0))
+     (kc/aggregate (count :*) :cnt :status))" "(import-games)" "(query \"game_id\" {:index \"games_idx\"})" "(query \"game_id\" {:index \"games_idx\"))" "(pp)" "(query \"team1_id\")" "(import-games)" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (> :game_date 0))
+      (kc/offset 1020))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (> :game_date 0))
+     (kc/limit 5) (kc/offset 1020))" "(import-games)" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (> :game_date 0))
+     (kc/limit 5) (kc/offset 1020))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (not= :game_date '0000-00-00 00:00:00'))
+     (kc/limit 5) (kc/offset 1020))" "(import-games)" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/limit 5) (kc/offset 1020))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (= :game_id 1025)))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (= :game_id 1023)))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (= :game_id 1025)))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (= :game_id 1024)))" "(kc/select sql-game
+     (kc/with sql-game-type
+              (kc/fields :game_type_name))
+     (kc/join [(kc/subselect sql-matchup
+                             (kc/join [sql-matchup :m2]
+                                      (= :m2.game_id :matchup.game_id))
+                             (kc/where (not= :m2.team_id :matchup.team_id)) 
+                             (kc/fields :game_id
+                                        [:team_id :team1_id]
+                                        [:host :team1_host]
+                                        [:m2.team_id :team2_id]
+                                        [:m2.host :team2_host])
+                             (kc/group :game_id)) :t2]
+              (= :game.game_id :t2.game_id))
+     (kc/fields :game_id 
+                :game_date)
+     (kc/where (and (not= 646 :game_id) (not= 647 :game_id)))
+     (kc/limit 4)
+     (kc/offset 1024))")
