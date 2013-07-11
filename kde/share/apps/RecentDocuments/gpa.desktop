@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=text-plain
+Name=gpa
+Type=Link
+URL[$e]=file://$HOME/expressCache/gpa
+X-KDE-LastOpenedWith=emacs24

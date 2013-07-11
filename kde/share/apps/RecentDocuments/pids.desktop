@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=text-plain
+Name=pids
+Type=Link
+URL[$e]=file://$HOME/64GBSD/pids
+X-KDE-LastOpenedWith=emacs24
