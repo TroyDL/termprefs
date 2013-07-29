@@ -65,9 +65,9 @@ set cursorline
 " set t_ti= t_te=
 
 " Highlight the 80th column
-"if exists("+colorcolumn")
-"  set colorcolumn=80
-"endif
+if exists("+colorcolumn")
+  set colorcolumn=72
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color scheme
@@ -113,12 +113,15 @@ inoremap <m-v> :r!pbpaste<cr>
 
 " ctrl+j to ctrl+d (page down)
 " ctrl+k to ctrl+u (page up)
-nnoremap <c-j> <c-d>
-nnoremap <c-k> <c-u>
+" nnoremap <c-j> <c-d>
+" nnoremap <c-k> <c-u>
+
+nnoremap <c-j> 10j
+nnoremap <c-k> 10k
 
 " 10j and k to J and K
-nnoremap J 10j
-nnoremap K 10k
+" nnoremap J 10j
+" nnoremap K 10k
 nnoremap H 30h
 nnoremap L 30l
 
