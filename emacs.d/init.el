@@ -14,6 +14,10 @@
 ;; Turn off the annoying visual bell.
 (setq visible-bell nil)
 
+;; Turn on blinking cursor
+(blink-cursor-mode)
+(idle-highlight-mode)
+
 ;; Turn off line highlighting.
 (remove-hook 'prog-mode-hook 'esk-turn-on-hl-line-mode)
 ;; Turn off idle highlight mode. It's annnoying.
