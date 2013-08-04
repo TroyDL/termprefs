@@ -1,2 +1,4 @@
 lein/self-installs
 .vim/.netrwhist
+emacs.d/nrepl-history
+emacs.d/backups/

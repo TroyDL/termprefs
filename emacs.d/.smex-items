@@ -1,0 +1,32 @@
+
+;; ----- smex-history -----
+(
+ clojure-test-mode
+ idle-highlight-mode
+ blink-cursor-mode
+ kill-buffer
+ load-file
+ make-directory
+ maximize-window
+)
+
+;; ----- smex-data -----
+(
+ (ac-complete-slime . 1)
+ (slime . 1)
+ (nrepl-ritz-jack-in . 3)
+ (nrepl-ritz-break-breakpoint-list . 2)
+ (nrepl-ritz-break-on-exception . 2)
+ (load-file . 10)
+ (quit-window . 1)
+ (exit-minibuffer . 1)
+ (maximize-window . 1)
+ (maximize-frame . 2)
+ (kill-buffer . 6)
+ (make-directory . 1)
+ (nrepl-restart . 1)
+ (nrepl-jack-in . 1)
+ (blink-cursor-mode . 1)
+ (idle-highlight-mode . 1)
+ (clojure-test-mode . 1)
+)

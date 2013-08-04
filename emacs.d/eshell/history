@@ -1,0 +1,11 @@
+ls
+cd git/ubuntusettings/
+ls
+cd scripts/
+ls
+vim postfreshinstall.sh 
+cd ..
+cd kworkerfix/
+ls
+sudo cp ~/ubuntusettings/kworkerfix/30_disable_gpe13 /etc/pm/sleep.d/30_disable_gpe13
+sudo cp ~/git/ubuntusettings/kworkerfix/30_disable_gpe13 /etc/pm/sleep.d/30_disable_gpe13
