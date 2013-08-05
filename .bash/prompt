@@ -1,7 +1,7 @@
 # vim:filetype=sh
 
 LAMBDA=`echo -ne "\x00\xce\xbb"`
-hostname=$(tput setaf 213) # Fuscia
+hostname=$(tput setaf 214) # Fuscia
 reset=$(tput sgr0)
 
 _parse_git_branch() {
