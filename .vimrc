@@ -32,7 +32,7 @@ set hlsearch
 " Turn on line numbers
 set number
 " Turn off text wrapping
-"set nowrap
+set nowrap
 " Use a minimum window width of 84 (numberwidth + 80).
 set winwidth=84
 " Use a minumum window height of 24.
